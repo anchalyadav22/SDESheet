@@ -1,0 +1,20 @@
+  Pascal’s Triangle 
+Problem Statement
+You are given an integer N. Your task is to return a 2-D ArrayList containing the pascal’s triangle till the row N.
+A Pascal's triangle is a triangular array constructed by summing adjacent elements in preceding rows.
+Pascal's triangle contains the values of the binomial coefficient. For example in the figure below.
+
+class Solution {
+public:
+    vector<vector<int>> generate(int numRows) {
+       vector<vector <int>> ans;
+       for(int i=0;i<numRows;i++){
+       vector<int>v(i+1,1);
+       for(int j=0;j<i;j++){
+            v[j] = ans[i-1][j] +ans[i-1][j-1];     
+       }
+       ans.push_back(v);
+    }
+       return ans;
+    }
+};
