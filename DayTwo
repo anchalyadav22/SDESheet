@@ -1,8 +1,11 @@
-  Pascal’s Triangle 
+     #### 2nd problem
+ Pascal’s Triangle 
 Problem Statement
 You are given an integer N. Your task is to return a 2-D ArrayList containing the pascal’s triangle till the row N.
 A Pascal's triangle is a triangular array constructed by summing adjacent elements in preceding rows.
 Pascal's triangle contains the values of the binomial coefficient. For example in the figure below.
+
+
 
 class Solution {
 public:
